@@ -1,0 +1,180 @@
+.page {
+  background-color: #dddddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+  position: relative;
+}
+
+.iconBox,
+.box {
+  width: 47%;
+  max-width: 600px;
+  min-width: 280px;
+}
+
+.iconBox {
+  background-color: #fff;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  top: 11vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.chatIconContainer {
+  width: 8vw;
+  max-width: 40px;
+  min-width: 30px;
+  height: 6vw;
+  max-height: 40px;
+  min-height: 30px;
+  border-radius: 50%;
+  background: #0d6efd;
+  margin: 1.8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 1.2em;
+  color: white;
+}
+
+.box {
+  max-height: 85vh;
+  min-height: 82vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10vh 3% 2vh;
+  overflow-y: auto;
+  margin-top: 6.9vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chatBubbleContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+.chatBubble {
+  text-align: center;
+  background-color: #e8e8e8;
+  padding: 1.2vh 1.3vw;
+  border-radius: 15px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.message {
+  font-size: 0.8em;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.startButton {
+  display: block;
+  margin: 2vh auto 0;
+  padding: 1vh 3vw;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: 0.3s;
+}
+
+.startButton:hover {
+  background-color: #0056b3;
+}
+
+.newBubble {
+  background-color: #0d6efd !important;
+}
+
+.newMessage {
+  color: white !important;
+}
+
+@media (max-width: 1024px) {
+  .box {
+    width: 75%;
+    margin-top: 5vh;
+    padding: 10.8vh 3% 2vh;
+  }
+  .iconBox {
+    width: 75%;
+    top: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 92%;
+  }
+  .iconBox {
+    width: 92%;
+  }
+
+  .chatIconContainer {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .message {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    margin-top: 3vh;
+    padding: 13vw 3% 2vh;
+    max-height: 90vh;
+    min-height: 83vh;
+  }
+  .iconBox {
+    top: 8vh;
+  }
+  .chatIconContainer {
+    width: 9vw;
+    height: 9vw;
+    margin: 1.4vh;
+  }
+  .icon {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 380px) {
+  .box {
+    margin-top: 3vh;
+    padding: 14.5vw 3% 2vh;
+    max-height: 90vh;
+    min-height: 83vh;
+  }
+  .iconBox {
+    top: 8vh;
+  }
+  .chatIconContainer {
+    width: 9vw;
+    height: 9vw;
+    margin: 1.4vh;
+  }
+  .icon {
+    font-size: 1em;
+  }
+}

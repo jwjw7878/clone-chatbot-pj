@@ -1,0 +1,99 @@
+.container {
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+.navbar {
+  height: 8vh;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0 5%;
+}
+
+.navbar-brand {
+  font-size: 1.2em !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  font-size: 0.8em !important;
+  display: flex;
+  align-items: center;
+  margin-left: 1vw;
+}
+
+.nav-link svg {
+  margin-right: 0.2vw;
+  font-size: 1.2em !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    height: 7vh;
+    padding: 0 4%;
+  }
+
+  .nav-link {
+    margin-left: 1.5vw;
+    font-size: 0.7em !important;
+  }
+
+  .nav-link svg {
+    margin-right: 0.3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0 4.5vw !important;
+    max-width: none !important;
+  }
+  .navbar {
+    height: 6vh;
+    padding: 0 4%;
+  }
+
+  .nav-link {
+    margin-left: 1.2vw;
+    font-size: 0.7em !important;
+  }
+
+  .nav-link svg {
+    margin-right: 0.3vw;
+  }
+}
+
+@media (max-width: 680px) {
+  .nav-link {
+    font-size: 1.8vw !important;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    height: 6vh;
+    padding: 0 3%;
+  }
+
+  .navbar-brand {
+    font-size: 1em !important;
+  }
+
+  .nav-link {
+    margin-left: 1vw;
+    font-size: 0.7em !important;
+  }
+
+  .nav-link svg {
+    margin-right: 0.3vw;
+    font-size: 1em !important;
+  }
+}
